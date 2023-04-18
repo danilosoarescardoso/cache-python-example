@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 from flask_caching import Cache
-import redis, time
+import time
 
 app = Flask(__name__)
 cache = Cache(app, config={'CACHE_TYPE': 'redis', 'CACHE_REDIS_URL': 'redis://localhost:6379'})
